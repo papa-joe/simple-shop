@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGO_PASS": "simple-shop",
+        "JWT_KEY": "something_secret"
+    }
+}
