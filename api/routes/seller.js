@@ -34,6 +34,12 @@ const OrdersController = require('../controllers/orders')
 
 router.post('/create-catalog', checkAuth, upload.single('productImage'), ProductController.add_product)
 
+router.patch('/edit-product/:id', checkAuth, ProductController.edit_product)
+
+router.delete('/delete-product/:id', checkAuth, ProductController.delete_product)
+
 router.get('/orders/:id', checkAuth, OrdersController.get_single_order)
+
+
 
 module.exports = router
